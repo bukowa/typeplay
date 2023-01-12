@@ -1,14 +1,16 @@
 FROM node
 
+
 WORKDIR /app
-COPY . .
 
+COPY package.json .
+COPY package-lock.json .
 RUN npm install
-RUN npx tsc \
-    && cd test && npx tsc
 
+COPY . .
+RUN ls
 WORKDIR /app
 # https://nodejs.org/api/test.html#test-runner-execution-model
 
-ENTRYPOINT ["node"]
-CMD ["--test"]
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["npm test"]

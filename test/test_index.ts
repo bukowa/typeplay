@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert';
-import {MyClass} from "../static/index.js";
+import {MyClass} from "../index";
 
 
 test("asdasdas", (t) => {
