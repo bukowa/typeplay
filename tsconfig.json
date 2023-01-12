@@ -6,5 +6,6 @@
     "removeComments": true,
     "module": "ES6",
     "allowSyntheticDefaultImports": true,
-  }
+  },
+  "exclude": ["tests/**"]
 }
