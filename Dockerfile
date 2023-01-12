@@ -5,5 +5,10 @@ COPY . .
 
 RUN npm install
 RUN npx tsc \
-    && cd tests && npx tsc \
-    && node test_index.js
+    && cd test && npx tsc
+
+WORKDIR /app
+# https://nodejs.org/api/test.html#test-runner-execution-model
+
+ENTRYPOINT ["node"]
+CMD ["--test"]

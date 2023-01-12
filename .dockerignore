@@ -2,4 +2,4 @@ node_modules
 static
 *.js
 Dockerfile
-tests/*.js
+test/*.js
