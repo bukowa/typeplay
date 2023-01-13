@@ -1,19 +1,6 @@
 
-
-export class MyClass {
-    a: string
-
-    constructor(a: string) {
-        this.a = a
-    }
-
-    add(): number {
-        return 5
-    }
+export interface LocalStorageMock {
+    getItem(key: string): string
+    removeItem(key: string): void;
+    setItem(key: string, value: string): void;
 }
-
-
-new MyClass("a")
-
-console.log("?")
-

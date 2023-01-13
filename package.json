@@ -6,6 +6,6 @@
     "tsx": "^3.12.2"
   },
   "scripts": {
-    "test": "npx tsc && node --loader tsx --test test/**"
+    "test": "npx tsc && node --no-warnings --loader tsx --test test/**"
   }
 }
