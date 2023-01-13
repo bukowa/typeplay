@@ -6,6 +6,8 @@
     "removeComments": true,
     "module": "ES6",
     "allowSyntheticDefaultImports": true,
+    // very important XD
+    "moduleResolution": "Node",
   },
   "exclude": [
     "test/**"
